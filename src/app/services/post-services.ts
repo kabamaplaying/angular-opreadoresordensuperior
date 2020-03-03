@@ -50,7 +50,7 @@ export class PostService {
     ).subscribe(e => console.log(e as User));
   }
 
-    listaUsuariosswitchMap() {
+    listaUsuariosSwitchMap() {
     return of(1,2).pipe(
       switchMap(userId => {
         return this.cliente.get<User>(`${this.urlUser}${userId}`).pipe(

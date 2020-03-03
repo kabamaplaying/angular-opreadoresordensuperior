@@ -15,6 +15,6 @@ export class AppComponent  implements OnInit{
     this.service.listaPost().subscribe(console.log);
     this.service.listaDeUsuariosConcatMap().subscribe(e => console.log('concatMap =>>', e as User))
     this.service.listaUsuariosMergeMap();
-    this.service.listaUsuariosswitchMap().subscribe(e => console.log(e as User));
+    this.service.listaUsuariosSwitchMap().subscribe(e => console.log(e as User));
   }
 }
