@@ -27,7 +27,7 @@ export class PostService {
   listaUsuario: User[] = [];
 
   post: Post;
-  listaDeUsuarios(): Observable<User> {
+  listaDeUsuariosConcatMap(): Observable<User> {
     const postId = 1;
     return of(1,2).pipe(
       concatMap(userId  => {

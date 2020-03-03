@@ -13,7 +13,7 @@ export class AppComponent  implements OnInit{
 
   ngOnInit() {
     this.service.listaPost().subscribe(console.log);
-    this.service.listaDeUsuarios().subscribe(e => console.log('concatMap =>>', e as User))
+    this.service.listaDeUsuariosConcatMap().subscribe(e => console.log('concatMap =>>', e as User))
     this.service.listaUsuariosMergeMap();
     this.service.listaUsuariosswitchMap().subscribe(e => console.log(e as User));
   }
